@@ -4,10 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgb(0, 255, 64);
+    background: linear-gradient(150deg, #0026ff 20%, #00d5ff 50%);
+    height: 800px;
 }
 .menu{
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 150px;
     margin: 20px auto;
     margin-bottom: 40px;
@@ -15,6 +16,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .menu h1{
     font-size: 4rem;
@@ -22,38 +24,80 @@ body{
     color: #ffbf00;
 }
 .menu input{
+    background: none;
+    outline: none;
     width: 30rem;
-    height: 30px;
+    height: 50px;
     border: none;
-    border-radius: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 1.4rem;
+    border-bottom: solid 4px #ffffff;
+    font-size: 1.9rem;
+    margin-top: 40px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 7px;
+    padding-bottom: 5px;
+}
+.menu input::placeholder{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.menu button{
+    width: 30rem;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    background-color: #ffbf00;
+    padding: 10px 20px;
+    outline: none;
+}
+.msg{
+    color: #d20202;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 215px;
+    left: 105px;
+    display: none;
 }
 .cities ul{
     list-style: none;
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin: 20px;
+    margin-top: 100px;
 }
 .cities ul li{
-    background-color: #ffbf00a2;
+    background-color: #ffffffa2;
     width: 150px;
     height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
+    border-radius: 50px;
     position: relative;
+    box-sizing: border-box;
+    margin: 10px;
 }
 .cities ul li i{
-    font-size: 2.7rem;
-    margin: 10PX;
+    font-size: 3.3rem;
+    position: absolute;
+    top: 10px;
+    left: 50px;
 }
-.cities ul li P{
-    margin: 10PX;
+.city-name{
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    font-size: 13px;
 }
-.cities ul li h2{
-    margin-left: 40px;
+.city-temperature{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 2rem;
+}
+.city-day{
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    font-size: 14px;
 }
