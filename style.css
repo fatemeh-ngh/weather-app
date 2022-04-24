@@ -8,7 +8,6 @@ body{
     height: 800px;
 }
 .menu{
-    /* background-color: aqua; */
     height: 150px;
     margin: 20px auto;
     margin-bottom: 40px;
@@ -57,19 +56,19 @@ body{
     margin-top: 10px;
     font-size: 1.2rem;
     position: absolute;
-    top: 215px;
-    left: 105px;
+    top: 230px;
+    left: 108px;
     display: none;
 }
 .cities ul{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 20px;
-    margin-top: 100px;
+    margin: 20px 50px;
+    margin-top: 130px;
 }
 .cities ul li{
-    background-color: #ffffffa2;
+    background-color: #ffffff93;
     width: 150px;
     height: 200px;
     border-radius: 50px;
@@ -91,13 +90,13 @@ body{
 }
 .city-temperature{
     position: absolute;
-    top: 120px;
-    left: 20px;
-    font-size: 2rem;
+    top: 115px;
+    left: 35px;
+    font-size: 2.4rem;
 }
 .city-day{
     position: absolute;
     top: 170px;
-    left: 50px;
+    left: 30px;
     font-size: 14px;
 }
